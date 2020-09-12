@@ -49,18 +49,18 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-* Replace '{API_KEY}' in script.js  with your API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
+* Get an API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
 
 
-### Prerequisites
+### Installation
  
 1. Clone the WeatherNow
 ```sh
 git clone https://github.com/olayis/WeatherNow.git
 ```
-2. To work on css and js files, replace the minified versions with the original files in index.html.
+2. To work on css and js files, replace the link to the minified versions with the original files in index.html located at `resources/`.
 
-3. Replace '{API_KEY}' in script.js  with your API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
+3. Replace `'{YOUR_API_KEY}'` in script.js  with your API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
 
 ## Contributing
 

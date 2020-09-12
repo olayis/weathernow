@@ -55,7 +55,7 @@ const mockJsonResponse = {
 };
 
 const getWeatherInfo = city => {
-    const key = '{YOUR_API_KEY}';
+    const key = '{YPOUR_API_KEY}';
     const units = 'metric';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=${units}`;
     fetch(url)
