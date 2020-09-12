@@ -1,0 +1,102 @@
+/* Small tablets to big tablets from 767px to 1023px */
+@media only screen and (max-width: 1023px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  header {
+    margin-top: 8rem;
+  }
+}
+
+/* Small phones to small tablets from 480px to 767px */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .search__wrapper input {
+    width: 45rem;
+  }
+
+  .weather,
+  .loading-box {
+    width: 45rem;
+  }
+
+  main {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header {
+    margin-top: 2rem;
+  }
+}
+
+/* Small phones from 320px to 480px */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .search__wrapper input {
+    width: 35rem;
+  }
+
+  .weather,
+  .loading-box {
+    width: 35rem;
+  }
+
+  .weather__error {
+    font-size: 1.6rem;
+  }
+
+  .weather__error--tip {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Very Small phones from 0 to 320px */
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .search__wrapper input {
+    width: 30rem;
+  }
+
+  .weather,
+  .loading-box {
+    width: 30rem;
+  }
+
+  footer {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Header collides with main content at 720px */
+@media only screen and (max-height: 720px) {
+  header {
+    margin-top: 1rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Footer collides with main content at 600px */
+@media only screen and (max-height: 600px) {  
+  footer {
+    display: none;
+  }
+}

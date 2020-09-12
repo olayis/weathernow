@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow | Current Weather Information</title>
+    <link rel="stylesheet" href="/resources/css/style.min.css">
+    <link rel="stylesheet" href="/resources/css/queries.min.css">
+    <link rel="stylesheet" href="/resources/css/theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f39c12">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="description" content="WeatherNow tells you the current weather information of your city.">
+    <meta name="theme-color" content="#101112">
+</head>
+
+<body>
+    <header>
+        <div class="header__text-box">
+            <h1><a href="index.html" class="header__link">WeatherNow</a></h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="section-search">
+            <div class="search">
+                <form action="#" method="get">
+                    <div class="search__wrapper">
+                        <input aria-label="Search" type="search" name="query" id="query" autofocus required
+                            placeholder="Search by city name e.g. New York, US">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="result-box">
+            <div class="section-weather">
+                <div class="weather display-none">
+                    <div class="weather__error"></div>
+                    <div class="weather__error--tip"></div>
+                    <div class="weather__time"></div>
+                    <div class="weather__icon">
+                        <img src="/resources/img/icons/unknown.png" alt="Weather icon">
+                    </div>
+                    <div class="weather__temp"></div>
+                    <div class="weather__description"></div>
+                    <div class="weather__location"></div>
+                </div>
+                <div class="loading-box display-none">
+                    <div class="loading-spinner">
+                        <div class="loading-min">
+                            <div></div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Loading...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Built for Smash It by<a href="https://github.com/olayis" class="footer__link" target="_blank"
+                rel="noreferrer">&nbsp;&copy;&nbsp;Olusegun&nbsp;Olayinka</a></p>
+    </footer>
+    <script src="/resources/js/script.min.js"></script>
+</body>
+
+</html>

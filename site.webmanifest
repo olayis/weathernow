@@ -1,0 +1,29 @@
+{
+    "name": "WeatherNow",
+    "short_name": "WeatherNow",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#101112",
+    "background_color": "#101112",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "dir": "ltr",
+    "lang": "en-US",
+    "description": "Get Weather Information for your city in real time.",
+    "scope": "/",
+    "serviceWorker": {
+        "src": "/sw_cached_site.min.js",
+        "scope": "/"
+    }
+}
