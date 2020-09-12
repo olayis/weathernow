@@ -4,7 +4,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/olayis/WeatherNow">
-    <img src="public\resources\img\favicon.png" alt="Logo" width="80" height="80">
+    <img src="resources\img\favicon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">WeatherNow</h3>
