@@ -1,6 +1,5 @@
 # WeatherNow
 
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/olayis/WeatherNow">
@@ -23,7 +22,6 @@
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -36,7 +34,7 @@
 * [Contact](#contact)
 
 ## About The Project
-
+<img src="resources\img\screenshot.jpg" alt="Screenshot" style="max-width: 100%; height: auto;">
 WeatherNow: A progressive web application that tells you the current weather information of your city.
 
 ### Built With
@@ -51,12 +49,10 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-
 * Replace '{API_KEY}' in script.js  with your API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
 
-```
 
-### Installation
+### Prerequisites
  
 1. Clone the WeatherNow
 ```sh
