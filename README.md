@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/olayis/WeatherNow">
+  <a href="https://github.com/olayis/weathernow">
     <img src="resources\img\favicon.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -11,14 +11,14 @@
   <p align="center">
     WeatherNow is a progressive web app that tells you the current weather information of your city.
     <br />
-    <a href="https://github.com/olayis/WeatherNow"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/olayis/weathernow"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://weathernow-1.web.app/">View Demo</a>
     ·
-    <a href="https://github.com/olayis/WeatherNow/issues">Report Bug</a>
+    <a href="https://github.com/olayis/weathernow/issues">Report Bug</a>
     ·
-    <a href="https://github.com/olayis/WeatherNow/issues">Request Feature</a>
+    <a href="https://github.com/olayis/weathernow/issues">Request Feature</a>
   </p>
 </p>
 
@@ -54,13 +54,13 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
  
-1. Clone the WeatherNow
+1. Clone the weathernow repository
 ```sh
-git clone https://github.com/olayis/WeatherNow.git
+git clone https://github.com/olayis/weathernow.git
 ```
 2. To work on css and js files, replace the link to the minified versions with the original files in index.html located at `resources/`.
 
-3. Replace `'{YOUR_API_KEY}'` in script.js  with your API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
+3. Replace `'{API_KEY}'` in script.js  with your API key from [openweathermap.com](https://openweathermap.org/api/one-call-api?gclid=CjwKCAjwgdX4BRB_EiwAg8O8HeCuPAZ1gZ-sk-XSSFaWDo2ecuOZWMQUUXUlJMwvHbWi7dGmWtsIwBoCHMQQAvD_BwE)
 
 ## Contributing
 
@@ -81,4 +81,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Olayinka Olusegun - [@olusegun_os](https://twitter.com/olusegun_os) - olayinkasegunsolo@gmail.com
 
-Project Link: [https://github.com/olayis/WeatherNow](https://github.com/olayis/WeatherNow)
+Project Link: [https://github.com/olayis/weathernow](https://github.com/olayis/weathernow)
