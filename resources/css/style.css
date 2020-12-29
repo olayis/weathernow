@@ -16,22 +16,22 @@ body {
   box-sizing: border-box;
   line-height: 1.6;
   overflow-x: hidden;
-  height: 100vh;   
-  background-color: #f8f9fa; 
+  height: 100vh;
+  background-color: #f8f9fa;
 }
 
 h1 {
   font-size: 7rem;
-  font-weight: 400;  
+  font-weight: 400;
 }
 
-header {    
+header {
   text-align: center;
   margin-top: 6rem;
 }
 
 .header__link {
-  text-decoration: none;  
+  text-decoration: none;
   color: inherit;
 }
 
@@ -39,7 +39,7 @@ main {
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);  
+  transform: translate(-50%, -50%);
 }
 
 .search__wrapper input {
@@ -47,16 +47,16 @@ main {
   font-size: 1.6rem;
   width: 50rem;
   color: #222;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 20rem;
   outline: none;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4); 
-  margin-bottom: 5px;   
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
 }
 
 .search__wrapper input:hover,
-.search__wrapper input:focus {  
+.search__wrapper input:focus {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -64,24 +64,22 @@ main {
   position: relative;
 }
 
-.weather {   
-  background: rgba(247, 247, 247, 0.23);    
+.weather {  
   padding: 2rem 2rem;
 }
 
 .weather,
-.loading-box {  
+.loading-box {
   position: absolute;
   top: 0;
   left: 0;
   width: 50rem;
-  text-align: center;  
+  text-align: center;
   border-radius: 2rem;
 }
 
-.loading-box {      
-  background: #fff;  
-  padding: 5rem 2rem;  
+.loading-box {  
+  padding: 5rem 2rem;
 }
 
 /* Weather Information */
@@ -102,11 +100,11 @@ main {
 }
 
 .weather__icon {
-  padding: .5rem 0;  
+  padding: 0.5rem 0;
 }
 
 .weather__icon img {
-  max-width: 100%;    
+  max-width: 100%;
   height: auto;
   width: 10rem;
 }
@@ -132,15 +130,14 @@ main {
 
 footer {
   position: absolute;
-  top: 95%;  
+  top: 95%;
   left: 50%;
-  transform: translate(-50%, -50%);    
+  transform: translate(-50%, -50%);
 }
-
 
 footer p {
   font-size: 1.3rem;
-  font-weight: 400;  
+  font-weight: 400;
 }
 
 .footer__link {
@@ -149,14 +146,13 @@ footer p {
   border-bottom: 2px dotted #eee;
 }
 
-.footer__link:hover {  
+.footer__link:hover {
   border-bottom: 2px solid #eee;
 }
 /* Utility Classes */
 .display-none {
   display: none;
 }
-
 
 /* LOADING ANIMATION */
 @keyframes ldio-cy0uaahr2i {
@@ -239,4 +235,72 @@ footer p {
   font-size: 2rem;
   font-weight: 400;
   color: #555;
+}
+
+/* THEMES */
+
+body.thunderstorm {
+  background: #1488cc;
+  background: -webkit-linear-gradient(to right, #2b32b2, #1488cc);
+  background: linear-gradient(to right, #2b32b2, #1488cc);
+  color: #fcfdfe;
+}
+
+body.drizzle {
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+  color: #feffff;
+}
+
+body.rain {
+  background: #0052d4;
+  background: -webkit-linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+  color: #fff;
+}
+
+body.snow {
+  background: #fffafa;
+}
+
+body.clear__day {
+  background: #ff932b;
+  background-image: linear-gradient(
+    to right top,
+    #ff4e50,
+    #ff713e,
+    #ff932b,
+    #ffb41d,
+    #f9d423
+  );
+  color: #fff;
+}
+
+body.clear__night {
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+  color: #fff;
+}
+
+body.clouds {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  color: #fff;
+}
+
+body.others {
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color: #fff;
+}
+
+body.offline {
+  background: #ad5389;
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+  background: linear-gradient(to right, #3c1053, #ad5389);
+  color: #faf8fa;
 }

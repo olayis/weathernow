@@ -1,15 +1,15 @@
-// Make sure service worker is supported
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
+// Retrieve search query from local storage and make sure service worker is supported
+window.addEventListener('load', () => {
+    if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('/sw_cached_site.min.js')
-            .then(reg => {})
-            .catch(err => {});
-    });
-}
+            .then(reg => {
+                console.log('Service worker registration sucessful');
+            }).catch(err => {
+                console.log('Service worker registration failed');
+            });
+    }
 
-// Retrieve search query from local storage
-window.addEventListener('load', () => {
     try {
         const json = localStorage.getItem('searchQuery');
         const searchQuery = JSON.parse(json);
@@ -23,7 +23,6 @@ window.addEventListener('load', () => {
     }
 });
 
-// Weather Search functionality begins here
 const dateConverter = unix_timestamp => {
     const daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const date = new Date(unix_timestamp * 1000);
@@ -54,15 +53,24 @@ const mockJsonResponse = {
     'dt': ''
 };
 
-const getWeatherInfo = city => {
-    const key = '{YPOUR_API_KEY}';
+// // Weather Search functionality begins here
+const getWeatherInfo = (location, method) => {
+    let search;
+    if (method === 'geolocation') {
+        const { lat, lon } = location;
+        search = `lat=${lat}&lon=${lon}`;
+    } else {
+        search = `q=${location}`;
+    }
+
+    const key = '{YOUR_API_KEY}';
     const units = 'metric';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=${units}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?${search}&appid=${key}&units=${units}`;
     fetch(url)
         .then(response => {
             if (response.status === 200) {
                 return response.json();
-            } else if (response.status === 404) {                
+            } else if (response.status === 404) {
                 return {
                     ...mockJsonResponse,
                     'error': 'City not found. Please Check your spelling or try searching for something else.',
@@ -77,7 +85,7 @@ const getWeatherInfo = city => {
             }
         })
         .then(data => displayWeatherInfo(data))
-        .catch(err => {            
+        .catch(err => {
             displayWeatherError();
         });
 };
@@ -99,8 +107,8 @@ const handleWeatherSearch = e => {
         document.querySelector('.weather__description').innerHTML = '';
         document.querySelector('.weather__temp').innerHTML = '';
         document.querySelector('.weather__time').innerHTML = '';
-        document.querySelector('.weather__location').innerHTML = '';       
-        document.querySelector('.weather').classList.remove('display-none');         
+        document.querySelector('.weather__location').innerHTML = '';
+        document.querySelector('.weather').classList.remove('display-none');
     }
 };
 
