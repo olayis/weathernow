@@ -7,6 +7,10 @@
   header {
     margin-top: 8rem;
   }
+
+  .search__wrapper input:focus {
+    padding: 1rem 2rem;
+  }
 }
 
 /* Small phones to small tablets from 480px to 767px */
@@ -88,14 +92,14 @@
   header {
     margin-top: 1rem;
   }
-  
+
   h1 {
     font-size: 3rem;
   }
 }
 
 /* Footer collides with main content at 600px */
-@media only screen and (max-height: 600px) {  
+@media only screen and (max-height: 600px) {
   footer {
     display: none;
   }
